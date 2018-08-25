@@ -1,4 +1,8 @@
 # GameWebSocket
+** CODE WAS IN DEVELOPE **
+
+
+
 #### Step 1: CREATE ROOM
 
 [POST] http://localhost:8181/create with json body:
