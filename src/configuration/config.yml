@@ -1,0 +1,12 @@
+appname: Game Boost
+appdesc: Boost ( Game flow control, Web socket ) by goroutine
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  db: 0
+
+contacts:
+  author: dylan
+  email: dylan@china.com
