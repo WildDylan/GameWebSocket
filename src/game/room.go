@@ -14,6 +14,24 @@ type Room struct {
 
 var Rooms = make(map[string]*Room)
 
+// Options
+func (room *Room) AddPlayer(player *Player)  {
+	room.Players = append(room.Players, player)
+	room.Owner = room.Players[0]
+}
+
+// Scheduler
+func (room *Room) Execute() {
+	// Every seconds, call this room
+	// TODO: But, it's not best, every step should have this own count down timer.
+}
+
+// Listeners
+func (room *Room) OnMessage(bytes []byte)  {
+	room.BroadCast(bytes)
+}
+
+// Message functions
 func (room *Room) BroadCast(bytes []byte) {
 	player := room.Owner
 	player.Connection.To(room.Id).EmitMessage(bytes)
@@ -27,12 +45,4 @@ func (room *Room) BroadCastExclude(bytes []byte, uid string) {
 		}
 		currentPlayer.Connection.EmitMessage(bytes)
 	}
-}
-
-func (room *Room) Execute() {
-
-}
-
-func (room *Room) OnMessage(bytes []byte)  {
-	room.BroadCast(bytes)
 }

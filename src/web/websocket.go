@@ -56,14 +56,13 @@ func onConnect(connection websocket.Connection) {
 	room, ok := game.Rooms[roomNumber]
 	if ok {
 		// Add player to room
-		room.Owner = &game.Player{
+		player := &game.Player{
 			Id:             token,
 			Name:           "Owner",
 			Connection:     connection,
 			Owner:          true,
 		}
-		// Join Room
-		connection.Join(roomNumber)
+		room.AddPlayer(player)
 		// Message listener
 		connection.OnMessage(room.OnMessage)
 		// Disconnect listener
