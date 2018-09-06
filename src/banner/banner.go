@@ -1,11 +1,11 @@
 package banner
 
 import (
-	"fmt"
+	"bytes"
 	. "configuration"
+	"fmt"
 	. "github.com/dimiro1/banner"
 	"github.com/mattn/go-colorable"
-	"bytes"
 	"io/ioutil"
 )
 

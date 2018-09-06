@@ -1,9 +1,9 @@
 package scheduler
 
 import (
+	"runtime"
 	"sync"
 	"time"
-	"runtime"
 )
 
 type Scheduler struct {

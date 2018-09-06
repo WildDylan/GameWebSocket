@@ -1,13 +1,13 @@
 package web
 
 import (
+	"game"
 	"github.com/kataras/iris"
-	"github.com/kataras/iris/websocket"
-	"net/http"
-	"log"
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
-	"game"
+	"github.com/kataras/iris/websocket"
+	"log"
+	"net/http"
 )
 
 var SocketApplication *iris.Application = nil

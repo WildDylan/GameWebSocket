@@ -3,10 +3,10 @@ package scheduler
 import (
 	"errors"
 	"fmt"
+	"log"
 	"reflect"
 	"sync"
 	"sync/atomic"
-	"log"
 )
 
 type Job interface{}

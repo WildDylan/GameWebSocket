@@ -1,11 +1,11 @@
 package main
 
 import (
-	. "configuration"
 	. "banner"
+	. "configuration"
 	. "scheduler"
-	. "web"
 	"time"
+	. "web"
 )
 
 func main() {

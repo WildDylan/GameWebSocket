@@ -1,12 +1,12 @@
 package web
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/middleware/recover"
-	"github.com/kataras/iris/middleware/logger"
-	. "web/request"
-	. "scheduler"
 	"game"
+	"github.com/kataras/iris"
+	"github.com/kataras/iris/middleware/logger"
+	"github.com/kataras/iris/middleware/recover"
+	. "scheduler"
+	. "web/request"
 )
 
 var App *iris.Application = nil
