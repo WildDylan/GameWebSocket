@@ -3,17 +3,12 @@ package main
 import (
 	. "banner"
 	. "configuration"
-	. "scheduler"
-	"time"
-	. "web"
+	. "socket"
 )
 
 func main() {
 	LoadConfig()
 	LoadBanner()
 
-	InitScheduler(1 * time.Second)
-
-	StartWebServer()
-	StartWebSocketServer()
+	Start()
 }

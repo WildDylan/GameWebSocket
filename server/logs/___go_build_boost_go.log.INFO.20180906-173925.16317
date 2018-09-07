@@ -1,0 +1,8 @@
+Log file created at: 2018/09/06 17:39:25
+Running on machine: dylandeMacBook-Pro
+Binary: Built with gc go1.10 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0906 17:39:25.053065   16317 motanserver.go:34] motan server is started. port:8100
+I0906 17:39:25.053487   16317 directRegistry.go:48] direct registry:register url :&{Protocol:motan2 Host:192.168.3.89 Port:8100 Path:channels.service.WebSocketService Group:socket-rpc Parameters:map[serialization:simple ref:socket.RPCService export:motan2:8100 conf-id:game-websocket nodeType:service registry:direct-registry] address: identity:}
+I0906 17:39:25.053556   16317 server.go:78] export url motan2://192.168.3.89:8100/channels.service.WebSocketService?group=socket-rpc success.
+I0906 17:39:25.053563   16317 server.go:142] service export success. url:&{motan2 192.168.3.89 8100 channels.service.WebSocketService socket-rpc map[registry:direct-registry serialization:simple ref:socket.RPCService export:motan2:8100 conf-id:game-websocket nodeType:service]  motan2://192.168.3.89:8100/channels.service.WebSocketService?group=socket-rpc}

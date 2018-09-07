@@ -1,0 +1,6 @@
+Log file created at: 2018/09/06 17:58:33
+Running on machine: dylandeMacBook-Pro
+Binary: Built with gc go1.10 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0906 17:58:33.441903   17585 motanserver.go:118] motan server convert to motan request fail. rid :1610851720467841025, service: channels.service.WebSocketService, method:BroadcastToRoom,err:message serialize not found
+E0906 17:59:26.124718   17585 motanserver.go:118] motan server convert to motan request fail. rid :1610851775711019009, service: channels.service.WebSocketService, method:BroadcastToRoom,err:message serialize not found

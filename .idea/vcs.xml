@@ -3,13 +3,20 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/BurntSushi/toml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/afex/hystrix-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/beberlei/fastcgi-serve" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/dimiro1/banner" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/go-redis/redis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang/protobuf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/jinzhu/configor" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/kataras/golog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/kataras/iris" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/kataras/pio" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/mattn/go-colorable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/mitchellh/mapstructure" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/rcrowley/go-metrics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/samuel/go-zookeeper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/weibocom/motan-go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/gopkg.in/yaml.v2" vcs="Git" />
   </component>
 </project>

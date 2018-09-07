@@ -1,0 +1,10 @@
+Log file created at: 2018/09/06 17:45:50
+Running on machine: dylandeMacBook-Pro
+Binary: Built with gc go1.10 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0906 17:45:50.472258   17585 motanserver.go:34] motan server is started. port:8100
+I0906 17:45:50.472651   17585 directRegistry.go:48] direct registry:register url :&{Protocol:motan2 Host:192.168.3.89 Port:8100 Path:channels.service.WebSocketService Group:socket-rpc Parameters:map[export:motan2:8100 registry:direct-registry conf-id:game-websocket nodeType:service serialization:simple ref:socketService] address: identity:}
+I0906 17:45:50.472680   17585 server.go:78] export url motan2://192.168.3.89:8100/channels.service.WebSocketService?group=socket-rpc success.
+I0906 17:45:50.472687   17585 server.go:142] service export success. url:&{motan2 192.168.3.89 8100 channels.service.WebSocketService socket-rpc map[nodeType:service serialization:simple ref:socketService export:motan2:8100 registry:direct-registry conf-id:game-websocket]  motan2://192.168.3.89:8100/channels.service.WebSocketService?group=socket-rpc}
+E0906 17:58:33.441903   17585 motanserver.go:118] motan server convert to motan request fail. rid :1610851720467841025, service: channels.service.WebSocketService, method:BroadcastToRoom,err:message serialize not found
+E0906 17:59:26.124718   17585 motanserver.go:118] motan server convert to motan request fail. rid :1610851775711019009, service: channels.service.WebSocketService, method:BroadcastToRoom,err:message serialize not found

@@ -1,0 +1,33 @@
+#config fo server
+motan-server:
+  # agent manage port
+  mport: 8002
+  log_dir: "./server/logs"
+  # server identify.
+  application: "socket-rpc"
+
+#config of registries
+# motan-registry 区用来配置不同的注册中心，多个注册中心以id进行区分
+motan-registry:
+  # 注册中心id，service引用时需与此id相同
+  direct-registry:
+    # 注册中心协议，也即注册中心类型。此处为便于测试使用直连注册中心，实际注册时不发生注册行为。
+    protocol: direct
+    port: 8012
+
+#conf of services
+motan-service:
+  game-websocket:
+    # 服务名称
+    path: channels.service.WebSocketService
+    # 服务所属group
+    group: socket-rpc
+    protocol: motan2
+    registry: direct-registry
+    # 目前golang版本仅支持simple序列化方式，其他序列化方式会逐步提供
+    serialization: simple
+    # golang中对service的具体实现类引用。此处为`包名.类名`方式引用，也可以使用自定义的id，需要与注册服务实现类时的id参数一致
+    ref : "socketService"
+    # 对外提供服务的端口。不同service可以使用相同export端口，前提条件为协议与序列化等配置必须相同。
+    export: "motan2:8100"
+
